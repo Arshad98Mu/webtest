@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react'
 import { DropDown } from './components/DropDown'
 import { CountrySelect } from './components/CountrySelect'
-
+import { ProfileInfo } from './components/ProfileInfo'
 
 
 
@@ -21,6 +21,9 @@ function App() {
       <br />
       <hr />
       <CountrySelect />
+      <hr />
+      <ProfileInfo />
+
     </div>
   );
 }

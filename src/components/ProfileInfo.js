@@ -25,8 +25,6 @@ export const ProfileInfo = () => {
 
             });
 
-
-
     }, [])
     return (<div>
 
@@ -34,9 +32,10 @@ export const ProfileInfo = () => {
         <div>
             <ListItem>
                 <ListItemAvatar>
-                    <Avatar>
-                        {/* <ImageIcon /> */}
-                    </Avatar>
+                    {res != null && <Avatar alt="Remy Sharp" src={res.data.avatar}>
+
+                    </Avatar>}
+
                 </ListItemAvatar>
                 <ListItemText primary={res == null ? "Loading" : <DisplayName response={res.data} />} secondary={res == null ? "Loading" : res.data.email} />
             </ListItem>
